@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Giới thiệu sản phẩm - JACKNOVA Bún Hạt Mít</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        /* RESET */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+        /* TONE MÀU CHỦ ĐẠO */
+        :root {
+            --green-dark: #1B5E20;
+            --green-main: #2E7D32;
+            --green-light: #E8F5E9;
+            --text-dark: #1B1B1B;
+        }
+
+        body { background: #f2fdf3; color: var(--text-dark); line-height: 1.6; }
+
+        .container { 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            padding: 20px 16px 40px; 
+        }
+
+        /* HEADER */
+        header {
+            background: #fff;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            border-left: 6px solid var(--green-main);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        header img.logo { 
+            height: 65px; 
+            width: auto; 
+            object-fit: contain; 
+            border-radius: 10px;
+        }
+
+        header .title-block h1 { 
+            font-size: 28px; 
+            margin-bottom: 6px; 
+            color: var(--green-dark);
+            font-weight: bold;
+        }
+
+        header .title-block p { 
+            font-size: 15px; 
+            color: #555; 
+        }
+
+        /* HERO */
+        .hero {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 100%;
+            border-radius: 16px;
+            max-height: 380px;
+            object-fit: cover;
+            margin-bottom: 12px;
+            border: 2px solid var(--green-main);
+        }
+
+        .hero-text-below h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: var(--green-dark);
+        }
+
+        .hero-text-below p {
+            font-size: 15px;
+            color: #2E7D32;
+        }
+
+        /* SECTION */
+        section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px 18px;
+            margin-bottom: 20px;
+            border-left: 6px solid var(--green-main);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+
+        section h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            padding-left: 10px;
+            color: var(--green-dark);
+            font-weight: bold;
+        }
+
+        /* 2 Cột */
+        .two-columns { display: flex; flex-wrap: wrap; gap: 20px; }
+        .two-columns > div { flex: 1 1 280px; }
+
+        .info-item { margin-bottom: 14px; }
+
+        .info-item h3 {
+            font-size: 17px;
+            margin-bottom: 6px;
+            color: var(--green-main);
+            font-weight: bold;
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-block;
+            background: var(--green-light);
+            color: var(--green-main);
+            padding: 6px 12px;
+            border-radius: 999px;
+            font-size: 12px;
+            margin-right: 6px;
+            margin-top: 4px;
+            border: 1px solid var(--green-main);
+        }
+
+        /* VIDEO */
+        .video-wrapper video {
+            width: 100%;
+            border-radius: 12px;
+            border: 2px solid var(--green-main);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        /* GALLERY */
+        .gallery-grid {
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px; 
+            margin-top: 10px;
+        }
+
+        .gallery-item { 
+            background: #fafffa;
+            border-radius: 12px;
+            padding: 10px; 
+            text-align: center; 
+            border: 1px solid var(--green-main);
+        }
+
+        .gallery-item img { 
+            width: 100%; 
+            border-radius: 10px; 
+            max-height: 220px; 
+            object-fit: cover; 
+            margin-bottom: 8px; 
+        }
+
+        /* FOOTER */
+        footer { 
+            text-align: center; 
+            font-size: 14px; 
+            color: #555; 
+            margin-top: 10px; 
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <img src="images/bunhatmit.jpg" class="logo" />
+        <div class="title-block">
+            <h1>JACKNOVA – BÚN HẠT MÍT</h1>
+            <p>Tái Sinh Giá Trị – Nâng Tầm Sức Khỏe. Thực phẩm Xanh từ Phụ Phẩm Nông Nghiệp.</p>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <img src="images/anhbia.jpg" />
+        <div class="hero-text-below">
+            <h2>Bún Hạt Mít – Sợi bún xanh từ phụ phẩm nông nghiệp Việt Nam</h2>
+            <p>Dai ngon tự nhiên – Không Gluten – Không phẩm màu – Không chất bảo quản.</p>
+        </div>
+    </div>
+
+    <!-- GIỚI THIỆU -->
+    <section id="gioi-thieu">
+        <h2>Giới thiệu sản phẩm</h2>
+        <div class="two-columns">
+
+            <div>
+                <div class="info-item">
+                    <h3>Tên sản phẩm</h3>
+                    <p><strong>JACKNOVA – Bún Hạt Mít</strong></p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Mô tả ngắn</h3>
+                    <p>
+                        JACKNOVA - Bún Hạt Mít là dòng bún khô tiên phong được chế biến từ <strong>bột hạt mít</strong>.
+                        Không Gluten – Không phẩm màu – Không chất bảo quản.
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Mô tả chi tiết</h3>
+                    <p>
+                        JACKNOVA đi đầu xu hướng <strong>Food Upcycling</strong>, tái sinh hạt mít thành thực phẩm xanh.
+                        Công nghệ ép đùn & sấy nhiệt giúp bún giữ dinh dưỡng, dai ngon tự nhiên mà không cần Gluten.
+                    </p>
+                </div>
+            </div>
+
+            <div class="video-wrapper">
+                <video src="images/videosp.mp4" controls></video>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- THÀNH PHẦN -->
+    <section id="thong-tin">
+        <h2>Thành phần – Lợi ích – Hướng dẫn sử dụng</h2>
+
+        <div class="two-columns">
+            <div>
+                <div class="info-item">
+                    <h3>Thành phần</h3>
+                    <p>
+                        • Bột hạt mít chất lượng cao.<br>
+                        • Nguyên liệu phối trộn chọn lọc.
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Lợi ích sức khỏe</h3>
+                    <p>
+                        • Không Gluten.<br>
+                        • Low GI – phù hợp người tiểu đường.<br>
+                        • Giàu chất xơ hòa tan.<br>
+                        • Bổ sung protein & khoáng.
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Lợi ích bền vững</h3>
+                    <p>
+                        • Food Upcycling – tái sinh phụ phẩm.<br>
+                        • Tăng thu nhập cho nông hộ.<br>
+                        • Thực phẩm xanh – an toàn.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="info-item">
+                    <h3>Hướng dẫn sử dụng</h3>
+                    <p>
+                        <strong>Luộc bún 5 phút</strong> → xả nước lạnh (tùy chọn).<br><br>
+                        • Dùng cho món nước.<br>
+                        • Trộn/xào tùy thích.<br>
+                        • Nhúng lẩu.
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Quy cách đóng gói</h3>
+                    <p>
+                        • Gói 200g – 2 đến 3 người ăn.<br>
+                        • Bao bì PA/PE cao cấp.
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Giá bán</h3>
+                    <p><strong>30.000 – 35.000đ / gói 200g</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KHÁCH HÀNG MỤC TIÊU -->
+    <section>
+        <h2>Khách hàng mục tiêu</h2>
+        <span class="badge">Người ăn kiêng (Low Carb / Eat Clean / Keto)</span>
+        <span class="badge">Người dị ứng Gluten</span>
+        <span class="badge">Người tiểu đường & người cao tuổi</span>
+        <span class="badge">Người ăn chay / thuần chay</span>
+        <span class="badge">Giới trẻ 18–35 yêu sức khỏe</span>
+    </section>
+
+    <!-- HÌNH ẢNH -->
+    <section id="hinh-anh">
+        <h2>Hình ảnh sản phẩm</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/sp1.jpg"><span>Bún đóng gói</span></div>
+            <div class="gallery-item"><img src="images/bunchebien1.jpg"><span>Bún chế biến</span></div>
+            <div class="gallery-item"><img src="images/bunchebienluoc.jpg"><span>Bún sau luộc</span></div>
+            <div class="gallery-item"><img src="images/anhdetai.jpg"><span>Poster đề tài</span></div>
+        </div>
+    </section>
+
+    <!-- LIÊN HỆ -->
+    <section id="lien-he">
+        <h2>Thông tin liên hệ</h2>
+        <p><strong>SĐT:</strong> 0376183993</p>
+        <p><strong>Zalo:</strong> Jacknova.vn</p>
+        <p><strong>Email:</strong> Jacknova.vn@gmail.com</p>
+        <p><strong>Fanpage:</strong> 
+            <a href="https://www.facebook.com/profile.php?id=61579310043845" target="_blank">JACKNOVA Official</a>
+        </p>
+        <p><strong>Địa chỉ:</strong> 93 Tân Kỳ Tân Quý, P. Sơn Kỳ, Q. Tân Phú, TP. HCM</p>
+    </section>
+
+    <footer>
+        © 2025 JACKNOVA – Bún Hạt Mít. Tái Sinh Giá Trị – Nâng Tầm Sức Khỏe.  
+        -------- Thịnh Website --------
+    </footer>
+</div>
+</body>
+</html>
