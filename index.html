@@ -4,381 +4,13 @@
     <meta charset="UTF-8" />
     <title>Giới thiệu sản phẩm - JACKNOVA Bún Hạt Mít</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        /* RESET */
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
 
-        /* COLOR VARIABLES (LIGHT + DARK) */
-        :root {
-            --green-dark: #1B5E20;
-            --green-main: #2E7D32;
-            --green-light: #E8F5E9;
-            --bg-body: #f2fdf3;
-            --bg-card: #ffffff;
-            --bg-soft: #fafffa;
-            --text-main: #1B1B1B;
-            --text-sub: #555555;
-            --border-accent: #2E7D32;
-        }
-
-        body.dark-mode {
-            --bg-body: #121212;
-            --bg-card: #1e1e1e;
-            --bg-soft: #222222;
-            --text-main: #f5f5f5;
-            --text-sub: #bbbbbb;
-            --border-accent: #66BB6A;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body { background: var(--bg-body); color: var(--text-main); line-height: 1.6; }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px 16px 40px;
-        }
-
-        /* HEADER */
-        header {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 16px 20px;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            border-left: 6px solid var(--green-main);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-        }
-
-        header img.logo {
-            height: 65px;
-            width: auto;
-            object-fit: contain;
-            border-radius: 10px;
-        }
-
-        header .title-block h1 {
-            font-size: 28px;
-            margin-bottom: 6px;
-            color: var(--green-dark);
-            font-weight: bold;
-        }
-
-        header .title-block p {
-            font-size: 15px;
-            color: var(--text-sub);
-        }
-
-        /* NAVBAR */
-        .main-nav {
-            background: var(--bg-card);
-            border-radius: 999px;
-            padding: 8px 16px;
-            margin: 10px auto 20px;
-            max-width: 900px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-            position: sticky;
-            top: 10px;
-            z-index: 50;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .nav-links a {
-            font-size: 14px;
-            text-decoration: none;
-            color: var(--green-dark);
-            padding: 6px 10px;
-            border-radius: 999px;
-            transition: 0.2s;
-        }
-
-        .nav-links a:hover {
-            background: var(--green-light);
-        }
-
-        .nav-right {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .nav-cta {
-            background: var(--green-main);
-            color: #fff;
-            border: none;
-            border-radius: 999px;
-            padding: 6px 14px;
-            font-size: 14px;
-            cursor: pointer;
-            white-space: nowrap;
-        }
-
-        .nav-cta.secondary {
-            background: transparent;
-            color: var(--green-dark);
-            border: 1px solid var(--green-main);
-        }
-
-        .nav-cta:hover {
-            opacity: 0.9;
-        }
-
-        .lang-switch {
-            display: flex;
-            border-radius: 999px;
-            overflow: hidden;
-            border: 1px solid var(--green-main);
-        }
-
-        .lang-btn {
-            background: transparent;
-            border: none;
-            padding: 4px 10px;
-            font-size: 13px;
-            cursor: pointer;
-            color: var(--green-dark);
-        }
-
-        .lang-btn.active {
-            background: var(--green-main);
-            color: #fff;
-        }
-
-        /* HERO */
-        .hero {
-            margin-bottom: 24px;
-            text-align: center;
-        }
-
-        .hero img {
-            width: 100%;
-            border-radius: 16px;
-            max-height: 380px;
-            object-fit: cover;
-            margin-bottom: 12px;
-            border: 2px solid var(--border-accent);
-        }
-
-        .hero-text-below h2 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 6px;
-            color: var(--green-dark);
-        }
-
-        .hero-text-below p {
-            font-size: 15px;
-            color: var(--green-main);
-        }
-
-        /* SECTION */
-        section {
-            background: var(--bg-card);
-            border-radius: 16px;
-            padding: 20px 18px;
-            margin-bottom: 20px;
-            border-left: 6px solid var(--green-main);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-        }
-
-        section h2 {
-            font-size: 22px;
-            margin-bottom: 12px;
-            padding-left: 10px;
-            color: var(--green-dark);
-            font-weight: bold;
-        }
-
-        /* 2 Cột */
-        .two-columns { display: flex; flex-wrap: wrap; gap: 20px; }
-        .two-columns > div { flex: 1 1 280px; }
-
-        .info-item { margin-bottom: 14px; }
-
-        .info-item h3 {
-            font-size: 17px;
-            margin-bottom: 6px;
-            color: var(--green-main);
-            font-weight: bold;
-        }
-
-        .info-item p {
-            color: var(--text-main);
-            font-size: 14px;
-        }
-
-        /* Badge */
-        .badge {
-            display: inline-block;
-            background: var(--green-light);
-            color: var(--green-main);
-            padding: 6px 12px;
-            border-radius: 999px;
-            font-size: 12px;
-            margin-right: 6px;
-            margin-top: 4px;
-            border: 1px solid var(--green-main);
-        }
-
-        /* VIDEO */
-        .video-wrapper video {
-            width: 100%;
-            border-radius: 12px;
-            border: 2px solid var(--border-accent);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-
-        /* GALLERY */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 16px;
-            margin-top: 10px;
-        }
-
-        .gallery-item {
-            background: var(--bg-soft);
-            border-radius: 12px;
-            padding: 10px;
-            text-align: center;
-            border: 1px solid var(--border-accent);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            border-radius: 10px;
-            max-height: 220px;
-            object-fit: cover;
-            margin-bottom: 8px;
-        }
-
-        .gallery-item span {
-            font-size: 13px;
-            color: var(--text-sub);
-        }
-
-        /* FORM ĐẶT HÀNG */
-        .order-box {
-            margin-top: 16px;
-            padding: 14px 16px;
-            border-radius: 12px;
-            background: var(--green-light);
-            border: 1px solid var(--green-main);
-        }
-
-        .order-box h3 {
-            margin-bottom: 8px;
-            color: var(--green-dark);
-        }
-
-        .order-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 8px;
-        }
-
-        .order-row input,
-        .order-row textarea {
-            flex: 1 1 200px;
-            padding: 6px 8px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-        }
-
-        body.dark-mode .order-box {
-            background: #263826;
-        }
-
-        .order-row textarea {
-            min-height: 60px;
-            resize: vertical;
-        }
-
-        .btn-submit {
-            background: var(--green-main);
-            color: #fff;
-            border: none;
-            border-radius: 999px;
-            padding: 8px 16px;
-            font-size: 14px;
-            cursor: pointer;
-            margin-top: 4px;
-        }
-
-        .btn-submit:hover {
-            opacity: 0.9;
-        }
-
-        /* BACK TO TOP */
-        #backToTop {
-            position: fixed;
-            right: 16px;
-            bottom: 16px;
-            width: 40px;
-            height: 40px;
-            border-radius: 999px;
-            border: none;
-            background: var(--green-main);
-            color: #fff;
-            font-size: 18px;
-            cursor: pointer;
-            display: none;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-            z-index: 100;
-        }
-
-        #backToTop:hover {
-            opacity: 0.9;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            font-size: 14px;
-            color: var(--text-sub);
-            margin-top: 10px;
-            padding-top: 10px;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .main-nav {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .nav-links {
-                width: 100%;
-            }
-            .nav-right {
-                width: 100%;
-                justify-content: flex-start;
-                flex-wrap: wrap;
-            }
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
+<body class="eco-bg-pattern"> <!-- thêm eco background -->
+
 <div class="container">
 
     <!-- HEADER -->
@@ -386,7 +18,9 @@
         <img src="images/bunhatmit.jpg" class="logo" alt="Logo JACKNOVA" />
         <div class="title-block">
             <h1 data-i18n="headerTitle">JACKNOVA – BÚN HẠT MÍT</h1>
-            <p data-i18n="headerSubtitle">Tái Sinh Giá Trị – Nâng Tầm Sức Khỏe. Thực phẩm Xanh từ Phụ Phẩm Nông Nghiệp.</p>
+            <p data-i18n="headerSubtitle">
+                Tái Sinh Giá Trị – Nâng Tầm Sức Khỏe. Thực phẩm Xanh từ Phụ Phẩm Nông Nghiệp.
+            </p>
         </div>
     </header>
 
@@ -396,6 +30,7 @@
             <a href="#gioi-thieu" data-i18n="navIntro">Giới thiệu</a>
             <a href="#thong-tin" data-i18n="navInfo">Thành phần &amp; Lợi ích</a>
             <a href="#hinh-anh" data-i18n="navGallery">Hình ảnh</a>
+            <a href="#review" data-i18n="navReview">Đánh giá</a>
             <a href="#lien-he" data-i18n="navContact">Liên hệ</a>
         </div>
         <div class="nav-right">
@@ -403,11 +38,13 @@
                 <button type="button" class="lang-btn active" data-lang="vi">VI</button>
                 <button type="button" class="lang-btn" data-lang="en">EN</button>
             </div>
-            <button class="nav-cta" id="orderNavBtn" data-i18n="navOrderBtn"
-                    onclick="document.getElementById('orderForm').scrollIntoView({behavior:'smooth'});">
+
+            <button class="nav-cta" id="orderNavBtn" 
+                onclick="document.getElementById('orderForm').scrollIntoView({behavior:'smooth'});">
                 Đặt hàng ngay
             </button>
-            <button class="nav-cta secondary" id="toggleThemeBtn" data-i18n="toggleDark">
+
+            <button class="nav-cta secondary" id="toggleThemeBtn">
                 Chế độ tối
             </button>
         </div>
@@ -418,34 +55,38 @@
         <img src="images/anhbia.jpg" alt="Ảnh bìa JACKNOVA" />
         <div class="hero-text-below">
             <h2 data-i18n="heroTitle">Bún Hạt Mít – Sợi bún xanh từ phụ phẩm nông nghiệp Việt Nam</h2>
-            <p data-i18n="heroSubtitle">Dai ngon tự nhiên – Không Gluten – Không phẩm màu – Không chất bảo quản.</p>
+            <p data-i18n="heroSubtitle">
+                Dai ngon tự nhiên – Không Gluten – Không phẩm màu – Không chất bảo quản.
+            </p>
         </div>
     </div>
 
     <!-- GIỚI THIỆU -->
     <section id="gioi-thieu">
-        <h2 data-i18n="sectionIntroTitle">Giới thiệu sản phẩm</h2>
-        <div class="two-columns">
+        <h2>Giới thiệu sản phẩm</h2>
 
+        <div class="two-columns">
             <div>
                 <div class="info-item">
-                    <h3 data-i18n="productNameTitle">Tên sản phẩm</h3>
-                    <p data-i18n="productNameText"><strong>JACKNOVA – Bún Hạt Mít</strong></p>
+                    <h3>Tên sản phẩm</h3>
+                    <p><strong>JACKNOVA – Bún Hạt Mít</strong></p>
                 </div>
 
                 <div class="info-item">
-                    <h3 data-i18n="shortDescTitle">Mô tả ngắn</h3>
-                    <p data-i18n="shortDescText">
+                    <h3>Mô tả ngắn</h3>
+                    <p>
                         JACKNOVA - Bún Hạt Mít là dòng bún khô tiên phong được chế biến từ
                         <strong>bột hạt mít</strong>. Không Gluten – Không phẩm màu – Không chất bảo quản.
                     </p>
                 </div>
 
                 <div class="info-item">
-                    <h3 data-i18n="detailDescTitle">Mô tả chi tiết</h3>
-                    <p data-i18n="detailDescText">
-                        JACKNOVA đi đầu xu hướng <strong>Food Upcycling</strong>, tái sinh hạt mít thành thực phẩm xanh.
-                        Công nghệ ép đùn &amp; sấy nhiệt giúp bún giữ dinh dưỡng, dai ngon tự nhiên mà không cần Gluten.
+                    <h3>Mô tả chi tiết</h3>
+                    <p>
+                        JACKNOVA đi đầu xu hướng <strong>Food Upcycling</strong>,
+                        tái sinh hạt mít thành thực phẩm xanh.
+                        Công nghệ ép đùn &amp; sấy nhiệt giúp bún giữ dinh dưỡng,
+                        dai ngon tự nhiên mà không cần Gluten.
                     </p>
                 </div>
             </div>
@@ -453,27 +94,27 @@
             <div class="video-wrapper">
                 <video src="images/video.mp4" controls></video>
             </div>
-
         </div>
     </section>
 
-    <!-- THÀNH PHẦN -->
+    <!-- THÔNG TIN -->
     <section id="thong-tin">
-        <h2 data-i18n="sectionInfoTitle">Thành phần – Lợi ích – Hướng dẫn sử dụng</h2>
+        <h2>Thành phần – Lợi ích – Hướng dẫn sử dụng</h2>
 
         <div class="two-columns">
+
             <div>
                 <div class="info-item">
-                    <h3 data-i18n="ingredientTitle">Thành phần</h3>
-                    <p data-i18n="ingredientText">
+                    <h3>Thành phần</h3>
+                    <p>
                         • Bột hạt mít nguyên chất.<br>
                         • Nguyên liệu phối trộn chọn lọc.
                     </p>
                 </div>
 
                 <div class="info-item">
-                    <h3 data-i18n="healthBenefitsTitle">Lợi ích sức khỏe</h3>
-                    <p data-i18n="healthBenefitsText">
+                    <h3>Lợi ích sức khỏe</h3>
+                    <p>
                         • Không Gluten.<br>
                         • Low GI – phù hợp người tiểu đường.<br>
                         • Giàu chất xơ hòa tan.<br>
@@ -482,8 +123,8 @@
                 </div>
 
                 <div class="info-item">
-                    <h3 data-i18n="sustainabilityTitle">Lợi ích bền vững</h3>
-                    <p data-i18n="sustainabilityText">
+                    <h3>Lợi ích bền vững</h3>
+                    <p>
                         • Food Upcycling – tái sinh phụ phẩm.<br>
                         • Tăng thu nhập cho nông hộ.<br>
                         • Thực phẩm xanh – an toàn.
@@ -493,9 +134,9 @@
 
             <div>
                 <div class="info-item">
-                    <h3 data-i18n="usageTitle">Hướng dẫn sử dụng</h3>
-                    <p data-i18n="usageText">
-                        <strong>Luộc bún 5 phút</strong> → xả nước lạnh (tùy chọn).<br><br>
+                    <h3>Hướng dẫn sử dụng</h3>
+                    <p>
+                        <strong>Luộc bún 5 phút</strong> → xả nước lạnh.<br><br>
                         • Dùng cho món nước.<br>
                         • Trộn/xào tùy thích.<br>
                         • Nhúng lẩu.
@@ -503,16 +144,16 @@
                 </div>
 
                 <div class="info-item">
-                    <h3 data-i18n="packingTitle">Quy cách đóng gói</h3>
-                    <p data-i18n="packingText">
+                    <h3>Quy cách đóng gói</h3>
+                    <p>
                         • Gói 200g – 2 đến 3 người ăn.<br>
                         • Bao bì PA/PE cao cấp.
                     </p>
                 </div>
 
                 <div class="info-item">
-                    <h3 data-i18n="priceTitle">Giá bán</h3>
-                    <p data-i18n="priceText"><strong>30.000 – 35.000đ / gói 200g</strong></p>
+                    <h3>Giá bán</h3>
+                    <p><strong>30.000 – 35.000đ / gói 200g</strong></p>
                 </div>
             </div>
         </div>
@@ -520,315 +161,136 @@
 
     <!-- KHÁCH HÀNG MỤC TIÊU -->
     <section>
-        <h2 data-i18n="targetTitle">Khách hàng mục tiêu</h2>
-        <span class="badge" data-i18n="target1">Người ăn kiêng (Low Carb / Eat Clean / Keto)</span>
-        <span class="badge" data-i18n="target2">Người dị ứng Gluten</span>
-        <span class="badge" data-i18n="target3">Người tiểu đường &amp; người cao tuổi</span>
-        <span class="badge" data-i18n="target4">Người ăn chay / thuần chay</span>
-        <span class="badge" data-i18n="target5">Giới trẻ 18–35 yêu sức khỏe</span>
+        <h2>Khách hàng mục tiêu</h2>
+
+        <span class="badge">Người ăn kiêng</span>
+        <span class="badge">Người dị ứng Gluten</span>
+        <span class="badge">Người tiểu đường &amp; người cao tuổi</span>
+        <span class="badge">Người ăn chay</span>
+        <span class="badge">Giới trẻ yêu sức khỏe</span>
     </section>
 
-    <!-- HÌNH ẢNH -->
-    <section id="hinh-anh">
-        <h2 data-i18n="galleryTitle">Hình ảnh sản phẩm</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="images/sp1.jpg" alt="Bún đóng gói">
-                <span data-i18n="gallery1">Bún đóng gói</span>
+
+    <!-- ⭐⭐⭐ REVIEW SECTION ⭐⭐⭐ -->
+    <section id="review">
+        <h2>Đánh giá khách hàng</h2>
+
+        <div class="review-grid">
+
+            <div class="review-card">
+                <img src="images/mebim.png" class="review-avatar" alt="avatar mẹ bỉm" />
+                <h4>⭐⭐⭐⭐⭐ – Mẹ bỉm</h4>
+                <p>“Ăn rất ngon, không lo tăng đường. Bún dai tự nhiên, bé cũng thích.”</p>
             </div>
-            <div class="gallery-item">
-                <img src="images/bunchebien1.jpg" alt="Bún xào">
-                <span data-i18n="gallery2">Bún xào</span>
+
+            <div class="review-card">
+                <img src="images/sinh viên.jpg" class="review-avatar" alt="avatar sinh viên" />
+                <h4>⭐⭐⭐⭐⭐ – Sinh viên</h4>
+                <p>“Nấu siêu nhanh, sạch, tiện, hợp người bận rộn.”</p>
             </div>
-            <div class="gallery-item">
-                <img src="images/bunchebienluoc.jpg" alt="Bún nước">
-                <span data-i18n="gallery3">Bún nước</span>
+
+            <div class="review-card">
+                <img src="images/hinhgym.jpg" class="review-avatar" alt="avatar dân gym" />
+                <h4>⭐⭐⭐⭐⭐ – Dân gym</h4>
+                <p>“Low GI chuẩn chỉnh. Tập xong ăn không bị tăng insulin.”</p>
             </div>
-            <div class="gallery-item">
-                <img src="images/anhdetai.jpg" alt="Poster đề tài">
-                <span data-i18n="gallery4">Poster đề tài</span>
-            </div>
+
         </div>
     </section>
 
-    <!-- LIÊN HỆ + ĐẶT HÀNG NHANH -->
+
+    <!-- HÌNH ẢNH SẢN PHẨM -->
+    <section id="hinh-anh">
+        <h2>Hình ảnh sản phẩm</h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="images/sp1.jpg"><span>Bún đóng gói</span></div>
+            <div class="gallery-item"><img src="images/bunchebien1.jpg"><span>Bún xào</span></div>
+            <div class="gallery-item"><img src="images/bunchebienluoc.jpg"><span>Bún nước</span></div>
+            <div class="gallery-item"><img src="images/hinhanhbunhatmit.jpg"><span>Bún đóng hộp</span></div>
+            <div class="gallery-item"><img src="images/bothatmit.jpg"><span>Bột hạt mít</span></div>
+            <div class="gallery-item"><img src="images/bunanlien.jpg"><span>Bún ăn liền</span></div>
+            <div class="gallery-item"><img src="images/hopbunanlien.jpg"><span>Hộp bún ăn liền</span></div>
+        </div>
+    </section>
+
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <span id="lightboxClose" class="lightbox-close">&times;</span>
+        <img id="lightboxImage" class="lightbox-image" src="" alt="" />
+        <div class="lightbox-nav">
+            <span id="lightboxPrev" class="lightbox-prev">&#10094;</span>
+            <span id="lightboxNext" class="lightbox-next">&#10095;</span>
+        </div>
+    </div>
+
+
+    <!-- LIÊN HỆ & ĐẶT HÀNG -->
     <section id="lien-he">
-        <h2 data-i18n="contactTitle">Thông tin liên hệ &amp; Đặt hàng</h2>
-        <p><strong data-i18n="phoneLabel">SĐT:</strong> 0376183993</p>
-        <p><strong data-i18n="zaloLabel">Zalo:</strong> Jacknova.vn</p>
-        <p><strong data-i18n="emailLabel">Email:</strong> Jacknova.vn@gmail.com</p>
+        <h2>Thông tin liên hệ &amp; Đặt hàng</h2>
+
+        <p><strong>SĐT:</strong> 0376183993</p>
+        <p><strong>Zalo:</strong> Jacknova.vn</p>
+        <p><strong>Email:</strong> Jacknova.vn@gmail.com</p>
         <p>
-            <strong data-i18n="fanpageLabel">Fanpage:</strong>
+            <strong>Fanpage:</strong>
             <a href="https://www.facebook.com/profile.php?id=61579310043845" target="_blank">JACKNOVA Official</a>
         </p>
-        <p>
-            <strong data-i18n="addressLabel">Địa chỉ:</strong>
-            93 Tân Kỳ Tân Quý, P. Sơn Kỳ, Q. Tân Phú, TP. HCM
-        </p>
 
-        <!-- FORM ĐẶT HÀNG NHANH -->
+        <!-- FORM -->
         <div class="order-box" id="orderForm">
-            <h3 data-i18n="orderBoxTitle">Đặt hàng nhanh JACKNOVA</h3>
+            <h3>Đặt hàng nhanh JACKNOVA</h3>
+
             <form id="quickOrderForm">
+
                 <div class="order-row">
-                    <input type="text" name="fullname" id="fullnameInput"
-                           placeholder="Họ và tên của bạn" required
-                           data-i18n-placeholder="placeholderName" />
-                    <input type="tel" name="phone" id="phoneInput"
-                           placeholder="Số điện thoại" required
-                           data-i18n-placeholder="placeholderPhone" />
+                    <input type="text" name="fullname" id="fullnameInput" placeholder="Họ và tên" required />
+                    <input type="tel" name="phone" id="phoneInput" placeholder="Số điện thoại" required />
                 </div>
+
                 <div class="order-row">
-                    <input type="number" name="quantity" id="qtyInput"
-                           placeholder="Số lượng gói (VD: 5)" min="1" required
-                           data-i18n-placeholder="placeholderQty" />
+                    <input type="number" name="quantity" id="qtyInput" placeholder="Số lượng (VD: 5)" min="1" required />
                 </div>
+
                 <div class="order-row">
-                    <textarea name="note" id="noteInput"
-                              placeholder="Ghi chú thêm (địa chỉ, thời gian liên hệ...)"
-                              data-i18n-placeholder="placeholderNote"></textarea>
+                    <textarea name="note" id="noteInput" placeholder="Ghi chú (địa chỉ, thời gian liên hệ...)"></textarea>
                 </div>
-                <button type="submit" class="btn-submit" data-i18n="submitBtn">
-                    Gửi yêu cầu đặt hàng
-                </button>
+
+                <button type="submit" class="btn-submit">Gửi yêu cầu đặt hàng</button>
             </form>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <span data-i18n="footerText">
-            © 2025 JACKNOVA – Bún Hạt Mít. Tái Sinh Giá Trị – Nâng Tầm Sức Khỏe.
-            -------- Thịnh Website --------
-        </span>
+        <span>© 2025 JACKNOVA – Bún Hạt Mít. -------- Thịnh Website --------</span>
     </footer>
+
 </div>
 
-<!-- NÚT LÊN ĐẦU TRANG -->
+<!-- Back to top -->
 <button id="backToTop" title="Lên đầu trang">↑</button>
 
-<script>
-    // --------- TRANSLATIONS ---------
-    const translations = {
-        vi: {
-            headerTitle: "JACKNOVA – BÚN HẠT MÍT",
-            headerSubtitle: "Tái Sinh Giá Trị – Nâng Tầm Sức Khỏe. Thực phẩm Xanh từ Phụ Phẩm Nông Nghiệp.",
-            heroTitle: "Bún Hạt Mít – Sợi bún xanh từ phụ phẩm nông nghiệp Việt Nam",
-            heroSubtitle: "Dai ngon tự nhiên – Không Gluten – Không phẩm màu – Không chất bảo quản.",
-            navIntro: "Giới thiệu",
-            navInfo: "Thành phần &amp; Lợi ích",
-            navGallery: "Hình ảnh",
-            navContact: "Liên hệ",
-            navOrderBtn: "Đặt hàng ngay",
-            toggleDark: "Chế độ tối",
-            toggleLight: "Chế độ sáng",
-            sectionIntroTitle: "Giới thiệu sản phẩm",
-            productNameTitle: "Tên sản phẩm",
-            productNameText: "<strong>JACKNOVA – Bún Hạt Mít</strong>",
-            shortDescTitle: "Mô tả ngắn",
-            shortDescText: "JACKNOVA - Bún Hạt Mít là dòng bún khô tiên phong được chế biến từ <strong>bột hạt mít</strong>. Không Gluten – Không phẩm màu – Không chất bảo quản.",
-            detailDescTitle: "Mô tả chi tiết",
-            detailDescText: "JACKNOVA đi đầu xu hướng <strong>Food Upcycling</strong>, tái sinh hạt mít thành thực phẩm xanh. Công nghệ ép đùn &amp; sấy nhiệt giúp bún giữ dinh dưỡng, dai ngon tự nhiên mà không cần Gluten.",
-            sectionInfoTitle: "Thành phần – Lợi ích – Hướng dẫn sử dụng",
-            ingredientTitle: "Thành phần",
-            ingredientText: "• Bột hạt mít nguyên chất.<br>• Nguyên liệu phối trộn chọn lọc.",
-            healthBenefitsTitle: "Lợi ích sức khỏe",
-            healthBenefitsText: "• Không Gluten.<br>• Low GI – phù hợp người tiểu đường.<br>• Giàu chất xơ hòa tan.<br>• Bổ sung protein &amp; khoáng.",
-            sustainabilityTitle: "Lợi ích bền vững",
-            sustainabilityText: "• Food Upcycling – tái sinh phụ phẩm.<br>• Tăng thu nhập cho nông hộ.<br>• Thực phẩm xanh – an toàn.",
-            usageTitle: "Hướng dẫn sử dụng",
-            usageText: "<strong>Luộc bún 5 phút</strong> → xả nước lạnh (tùy chọn).<br><br>• Dùng cho món nước.<br>• Trộn/xào tùy thích.<br>• Nhúng lẩu.",
-            packingTitle: "Quy cách đóng gói",
-            packingText: "• Gói 200g – 2 đến 3 người ăn.<br>• Bao bì PA/PE cao cấp.",
-            priceTitle: "Giá bán",
-            priceText: "<strong>30.000 – 35.000đ / gói 200g</strong>",
-            targetTitle: "Khách hàng mục tiêu",
-            target1: "Người ăn kiêng (Low Carb / Eat Clean / Keto)",
-            target2: "Người dị ứng Gluten",
-            target3: "Người tiểu đường &amp; người cao tuổi",
-            target4: "Người ăn chay / thuần chay",
-            target5: "Giới trẻ 18–35 yêu sức khỏe",
-            galleryTitle: "Hình ảnh sản phẩm",
-            gallery1: "Bún đóng gói",
-            gallery2: "Bún xào",
-            gallery3: "Bún nước",
-            gallery4: "Poster đề tài",
-            contactTitle: "Thông tin liên hệ &amp; Đặt hàng",
-            phoneLabel: "SĐT:",
-            zaloLabel: "Zalo:",
-            emailLabel: "Email:",
-            fanpageLabel: "Fanpage:",
-            addressLabel: "Địa chỉ:",
-            orderBoxTitle: "Đặt hàng nhanh JACKNOVA",
-            placeholderName: "Họ và tên của bạn",
-            placeholderPhone: "Số điện thoại",
-            placeholderQty: "Số lượng gói (VD: 5)",
-            placeholderNote: "Ghi chú thêm (địa chỉ, thời gian liên hệ...)",
-            submitBtn: "Gửi yêu cầu đặt hàng",
-            footerText: "© 2025 JACKNOVA – Bún Hạt Mít. Tái Sinh Giá Trị – Nâng Tầm Sức Khỏe. -------- Thịnh Website --------",
-            orderSuccess: "Cảm ơn {name} đã đặt {qty} JACKNOVA!\nChúng tôi sẽ liên hệ xác nhận đơn hàng trong thời gian sớm nhất.",
-            orderProductWord: "sản phẩm",
-            orderYouWord: "bạn"
-        },
-        en: {
-            headerTitle: "JACKNOVA – Jackfruit Seed Noodles",
-            headerSubtitle: "Reviving Value – Elevating Health. Green Food from Agricultural By-Products.",
-            heroTitle: "Jackfruit Seed Noodles – Green noodles from Vietnamese farm by-products",
-            heroSubtitle: "Naturally chewy – Gluten-free – No artificial colors – No preservatives.",
-            navIntro: "About",
-            navInfo: "Ingredients &amp; Benefits",
-            navGallery: "Gallery",
-            navContact: "Contact",
-            navOrderBtn: "Order now",
-            toggleDark: "Dark mode",
-            toggleLight: "Light mode",
-            sectionIntroTitle: "Product introduction",
-            productNameTitle: "Product name",
-            productNameText: "<strong>JACKNOVA – Jackfruit Seed Noodles</strong>",
-            shortDescTitle: "Short description",
-            shortDescText: "JACKNOVA – Jackfruit Seed Noodles is a pioneering dried noodle made from <strong>jackfruit seed flour</strong>. Gluten-free – No artificial colors – No preservatives.",
-            detailDescTitle: "Detailed description",
-            detailDescText: "JACKNOVA leads the <strong>Food Upcycling</strong> trend, transforming jackfruit seeds into sustainable food. Extrusion &amp; hot-air drying technology keeps nutrients and creates a naturally chewy texture without Gluten.",
-            sectionInfoTitle: "Ingredients – Benefits – Usage",
-            ingredientTitle: "Ingredients",
-            ingredientText: "• Pure jackfruit seed flour.<br>• Selected blended ingredients.",
-            healthBenefitsTitle: "Health benefits",
-            healthBenefitsText: "• Gluten-free.<br>• Low GI – suitable for people with diabetes.<br>• Rich in soluble fiber.<br>• Provides protein &amp; minerals.",
-            sustainabilityTitle: "Sustainability benefits",
-            sustainabilityText: "• Food Upcycling – reusing by-products.<br>• Increases income for jackfruit farmers.<br>• Green and safe food.",
-            usageTitle: "How to use",
-            usageText: "<strong>Boil noodles for 5 minutes</strong> → optionally rinse with cold water.<br><br>• Use for soup dishes.<br>• Stir-fry or toss with sauce.<br>• Dip in hotpot.",
-            packingTitle: "Packaging",
-            packingText: "• 200g pack – serves 2–3 people.<br>• High-quality PA/PE packaging.",
-            priceTitle: "Price",
-            priceText: "<strong>30,000 – 35,000 VND / 200g pack</strong>",
-            targetTitle: "Target customers",
-            target1: "People on diet (Low Carb / Eat Clean / Keto)",
-            target2: "People with Gluten intolerance",
-            target3: "People with diabetes &amp; the elderly",
-            target4: "Vegetarian / vegan consumers",
-            target5: "Young people 18–35 who care about health",
-            galleryTitle: "Product gallery",
-            gallery1: "Packed noodles",
-            gallery2: "Stir-fried noodles",
-            gallery3: "Noodle soup",
-            gallery4: "Project poster",
-            contactTitle: "Contact &amp; Order",
-            phoneLabel: "Phone:",
-            zaloLabel: "Zalo:",
-            emailLabel: "Email:",
-            fanpageLabel: "Fanpage:",
-            addressLabel: "Address:",
-            orderBoxTitle: "Quick order JACKNOVA",
-            placeholderName: "Your full name",
-            placeholderPhone: "Phone number",
-            placeholderQty: "Number of packs (e.g. 5)",
-            placeholderNote: "Additional notes (address, preferred contact time...)",
-            submitBtn: "Send order request",
-            footerText: "© 2025 JACKNOVA – Jackfruit Seed Noodles. Reviving Value – Elevating Health. -------- Thinh Website --------",
-            orderSuccess: "Thank you {name} for ordering {qty} JACKNOVA!\nWe will contact you soon to confirm your order.",
-            orderProductWord: "product(s)",
-            orderYouWord: "you"
-        }
-    };
+<!-- 🌟 NÚT NỔI LIÊN HỆ -->
+<div class="floating-buttons">
 
-    let currentLang = localStorage.getItem('jacknovaLang') || 'vi';
+    <a href="https://zalo.me/0376183993" class="float-btn zalo" target="_blank">
+        <img src="images/hìnhzalo.webp" alt="Zalo">
+    </a>
 
-    function applyLanguage(lang) {
-        const dict = translations[lang] || translations.vi;
-        document.documentElement.lang = lang === 'en' ? 'en' : 'vi';
+    <a href="https://m.me/jacknova.vn" class="float-btn messenger" target="_blank">
+        <img src="images/hinhmess.webp" alt="Messenger">
+    </a>
 
-        // Text nodes with data-i18n
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (dict[key]) {
-                el.innerHTML = dict[key];
-            }
-        });
+    <a href="tel:0376183993" class="float-btn phone">
+        <img src="images/callphone.jpg" alt="Call">
+    </a>
 
-        // Placeholders
-        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-            const key = el.getAttribute('data-i18n-placeholder');
-            if (dict[key]) {
-                el.placeholder = dict[key];
-            }
-        });
+</div>
 
-        // Active lang button
-        document.querySelectorAll('.lang-btn').forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.lang === lang);
-        });
-
-        // Update theme button text
-        updateThemeButtonText();
-
-        localStorage.setItem('jacknovaLang', lang);
-    }
-
-    // THEME TOGGLE
-    const toggleThemeBtn = document.getElementById('toggleThemeBtn');
-
-    function updateThemeButtonText() {
-        const dict = translations[currentLang] || translations.vi;
-        if (document.body.classList.contains('dark-mode')) {
-            toggleThemeBtn.textContent = dict.toggleLight;
-        } else {
-            toggleThemeBtn.textContent = dict.toggleDark;
-        }
-    }
-
-    const savedTheme = localStorage.getItem('jacknovaTheme') || 'light';
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-    }
-
-    toggleThemeBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        const newTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-        localStorage.setItem('jacknovaTheme', newTheme);
-        updateThemeButtonText();
-    });
-
-    // LANGUAGE BUTTON EVENTS
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            currentLang = btn.dataset.lang;
-            applyLanguage(currentLang);
-        });
-    });
-
-    // INIT LANGUAGE + THEME TEXT
-    applyLanguage(currentLang);
-
-    // Nút lên đầu trang
-    const backToTopBtn = document.getElementById('backToTop');
-
-    window.addEventListener('scroll', function () {
-        if (window.pageYOffset > 400) {
-            backToTopBtn.style.display = 'block';
-        } else {
-            backToTopBtn.style.display = 'none';
-        }
-    });
-
-    backToTopBtn.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Xử lý form đặt hàng nhanh (demo, không gửi server)
-    const orderForm = document.getElementById('quickOrderForm');
-    orderForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        const name = this.fullname.value.trim();
-        const qty = this.quantity.value.trim() || translations[currentLang].orderProductWord;
-        const dict = translations[currentLang];
-        const nameText = name || dict.orderYouWord;
-        const msg = dict.orderSuccess
-            .replace('{name}', nameText)
-            .replace('{qty}', qty);
-        alert(msg);
-        this.reset();
-    });
-</script>
+<!-- JS -->
+<script src="js/main.js"></script>
 
 </body>
 </html>
