@@ -2,15 +2,12 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8" />
-    <title>Giới thiệu sản phẩm - JACKNOVA Bún Hạt Mít</title>
+    <title data-i18n="pageTitle">Giới thiệu sản phẩm - JACKNOVA Bún Hạt Mít</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body class="eco-bg-pattern"> <!-- thêm eco background -->
-
+<body class="eco-bg-pattern">
 <div class="container">
 
     <!-- HEADER -->
@@ -33,18 +30,18 @@
             <a href="#review" data-i18n="navReview">Đánh giá</a>
             <a href="#lien-he" data-i18n="navContact">Liên hệ</a>
         </div>
+
         <div class="nav-right">
             <div class="lang-switch">
                 <button type="button" class="lang-btn active" data-lang="vi">VI</button>
                 <button type="button" class="lang-btn" data-lang="en">EN</button>
             </div>
 
-            <button class="nav-cta" id="orderNavBtn" 
-                onclick="document.getElementById('orderForm').scrollIntoView({behavior:'smooth'});">
+            <button class="nav-cta" id="orderNavBtn" data-i18n="navOrderBtn">
                 Đặt hàng ngay
             </button>
 
-            <button class="nav-cta secondary" id="toggleThemeBtn">
+            <button class="nav-cta secondary" id="toggleThemeBtn" data-i18n="toggleDark">
                 Chế độ tối
             </button>
         </div>
@@ -63,32 +60,32 @@
 
     <!-- GIỚI THIỆU -->
     <section id="gioi-thieu">
-        <h2>Giới thiệu sản phẩm</h2>
+        <h2 data-i18n="sectionIntroTitle">Giới thiệu sản phẩm</h2>
 
         <div class="two-columns">
             <div>
+
                 <div class="info-item">
-                    <h3>Tên sản phẩm</h3>
-                    <p><strong>JACKNOVA – Bún Hạt Mít</strong></p>
+                    <h3 data-i18n="productNameTitle">Tên sản phẩm</h3>
+                    <p data-i18n="productNameText"><strong>JACKNOVA – Bún Hạt Mít</strong></p>
                 </div>
 
                 <div class="info-item">
-                    <h3>Mô tả ngắn</h3>
-                    <p>
+                    <h3 data-i18n="shortDescTitle">Mô tả ngắn</h3>
+                    <p data-i18n="shortDescText">
                         JACKNOVA - Bún Hạt Mít là dòng bún khô tiên phong được chế biến từ
                         <strong>bột hạt mít</strong>. Không Gluten – Không phẩm màu – Không chất bảo quản.
                     </p>
                 </div>
 
                 <div class="info-item">
-                    <h3>Mô tả chi tiết</h3>
-                    <p>
+                    <h3 data-i18n="detailDescTitle">Mô tả chi tiết</h3>
+                    <p data-i18n="detailDescText">
                         JACKNOVA đi đầu xu hướng <strong>Food Upcycling</strong>,
                         tái sinh hạt mít thành thực phẩm xanh.
-                        Công nghệ ép đùn &amp; sấy nhiệt giúp bún giữ dinh dưỡng,
-                        dai ngon tự nhiên mà không cần Gluten.
                     </p>
                 </div>
+
             </div>
 
             <div class="video-wrapper">
@@ -99,14 +96,14 @@
 
     <!-- THÔNG TIN -->
     <section id="thong-tin">
-        <h2>Thành phần – Lợi ích – Hướng dẫn sử dụng</h2>
+        <h2 data-i18n="sectionInfoTitle">Thành phần – Lợi ích – Hướng dẫn sử dụng</h2>
 
         <div class="two-columns">
 
             <div>
                 <div class="info-item">
-                    <h3>Thành phần</h3>
-                    <p>
+                    <h3 data-i18n="ingredientTitle">Thành phần</h3>
+                    <p data-i18n="ingredientText">
                         • Bột hạt mít nguyên chất.<br>
                         • Nguyên liệu phối trộn chọn lọc.
                     </p>
@@ -114,7 +111,7 @@
 
                 <div class="info-item">
                     <h3>Lợi ích sức khỏe</h3>
-                    <p>
+                    <p data-i18n="healthBenefitsText">
                         • Không Gluten.<br>
                         • Low GI – phù hợp người tiểu đường.<br>
                         • Giàu chất xơ hòa tan.<br>
@@ -123,97 +120,126 @@
                 </div>
 
                 <div class="info-item">
-                    <h3>Lợi ích bền vững</h3>
-                    <p>
+                    <h3 data-i18n="sustainabilityTitle">Lợi ích bền vững</h3>
+                    <p data-i18n="sustainabilityText">
                         • Food Upcycling – tái sinh phụ phẩm.<br>
                         • Tăng thu nhập cho nông hộ.<br>
                         • Thực phẩm xanh – an toàn.
                     </p>
                 </div>
+
             </div>
 
             <div>
+
                 <div class="info-item">
-                    <h3>Hướng dẫn sử dụng</h3>
-                    <p>
-                        <strong>Luộc bún 5 phút</strong> → xả nước lạnh.<br><br>
-                        • Dùng cho món nước.<br>
-                        • Trộn/xào tùy thích.<br>
-                        • Nhúng lẩu.
+                    <h3 data-i18n="usageTitle">Hướng dẫn sử dụng</h3>
+                    <p data-i18n="usageText">
+                        <strong>Luộc bún 5 phút</strong> → xả nước lạnh.<br>
                     </p>
                 </div>
 
                 <div class="info-item">
-                    <h3>Quy cách đóng gói</h3>
-                    <p>
+                    <h3 data-i18n="packingTitle">Quy cách đóng gói</h3>
+                    <p data-i18n="packingText">
                         • Gói 200g – 2 đến 3 người ăn.<br>
                         • Bao bì PA/PE cao cấp.
                     </p>
                 </div>
 
                 <div class="info-item">
-                    <h3>Giá bán</h3>
-                    <p><strong>15.000 – 20.000đ / gói 200g</strong></p>
+                    <h3 data-i18n="priceTitle">Giá bán</h3>
+                    <p data-i18n="priceText"><strong>15.000 – 20.000đ / gói 200g</strong></p>
                 </div>
+
             </div>
+
         </div>
     </section>
 
     <!-- KHÁCH HÀNG MỤC TIÊU -->
     <section>
-        <h2>Khách hàng mục tiêu</h2>
+        <h2 data-i18n="targetTitle">Khách hàng mục tiêu</h2>
 
-        <span class="badge">Người ăn kiêng</span>
-        <span class="badge">Người dị ứng Gluten</span>
-        <span class="badge">Người tiểu đường &amp; người cao tuổi</span>
-        <span class="badge">Người ăn chay</span>
-        <span class="badge">Giới trẻ yêu sức khỏe</span>
+        <span class="badge" data-i18n="target1">Người ăn kiêng, giảm cân</span>
+        <span class="badge" data-i18n="target2">Người quan tâm đến sức khỏe</span>
+        <span class="badge" data-i18n="target3">Người tiểu đường &amp; tim mạch</span>
+        <span class="badge" data-i18n="target4">những người thích sự mới lạ trong bữa ăn</span>
     </section>
 
-
-    <!-- ⭐⭐⭐ REVIEW SECTION ⭐⭐⭐ -->
+    <!-- REVIEW -->
     <section id="review">
-        <h2>Đánh giá khách hàng</h2>
+        <h2 data-i18n="reviewTitle">Đánh giá khách hàng</h2>
 
         <div class="review-grid">
 
             <div class="review-card">
-                <img src="images/mebim.png" class="review-avatar" alt="avatar mẹ bỉm" />
-                <h4>⭐⭐⭐⭐⭐ – Mẹ bỉm</h4>
-                <p>“Ăn rất ngon, không lo tăng đường. Bún dai tự nhiên, bé cũng thích.”</p>
+                <img src="images/mebim.png" class="review-avatar" />
+                <h4>⭐⭐⭐⭐⭐ – <span data-i18n="reviewer1">Mẹ bỉm</span></h4>
+                <p data-i18n="review1">
+                    “Ăn rất ngon, không lo tăng đường. Bún dai tự nhiên, bé cũng thích.”
+                </p>
             </div>
 
             <div class="review-card">
-                <img src="images/sinh viên.jpg" class="review-avatar" alt="avatar sinh viên" />
-                <h4>⭐⭐⭐⭐⭐ – Sinh viên</h4>
-                <p>“Nấu siêu nhanh, sạch, tiện, hợp người bận rộn.”</p>
+                <img src="images/hinh.jpg" class="review-avatar" />
+                <h4>⭐⭐⭐⭐⭐ – <span data-i18n="reviewer2">Sinh viên</span></h4>
+                <p data-i18n="review2">
+                    “Nấu nhanh, tiện lợi cho người bận rộn.”
+                </p>
             </div>
 
             <div class="review-card">
-                <img src="images/hinhgym.jpg" class="review-avatar" alt="avatar dân gym" />
-                <h4>⭐⭐⭐⭐⭐ – Dân gym</h4>
-                <p>“Low GI chuẩn chỉnh. Tập xong ăn không bị tăng insulin.”</p>
+                <img src="images/hinhgym.jpg" class="review-avatar" />
+                <h4>⭐⭐⭐⭐⭐ – <span data-i18n="reviewer3">Dân gym</span></h4>
+                <p data-i18n="review3">
+                    “Low GI phù hợp tập luyện.”
+                </p>
             </div>
 
         </div>
     </section>
 
-
-    <!-- HÌNH ẢNH SẢN PHẨM -->
+    <!-- GALLERY -->
     <section id="hinh-anh">
-        <h2>Hình ảnh sản phẩm</h2>
+        <h2 data-i18n="galleryTitle">Hình ảnh sản phẩm</h2>
 
         <div class="gallery-grid">
-            <div class="gallery-item"><img src="images/sp1.jpg"><span>Bún đóng gói</span></div>
-            <div class="gallery-item"><img src="images/bunchebien1.jpg"><span>Bún xào</span></div>
-            <div class="gallery-item"><img src="images/bunchebienluoc.jpg"><span>Bún nước</span></div>
-            <div class="gallery-item"><img src="images/hinhanhbunhatmit.jpg"><span>Bún đóng hộp</span></div>
-            <div class="gallery-item"><img src="images/bothatmit.jpg"><span>Bột hạt mít</span></div>
-            <div class="gallery-item"><img src="images/bunanlien.jpg"><span>Bún ăn liền</span></div>
-            <div class="gallery-item"><img src="images/hopbunanlien.jpg"><span>Hộp bún ăn liền</span></div>
+
+            <div class="gallery-item">
+                <img src="images/sp1.jpg"><span data-i18n="gallery1">Sản phẩm gian hàng</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/bunchebien1.jpg"><span data-i18n="gallery2">Bún xào</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/bunchebienluoc.jpg"><span data-i18n="gallery3">Bún nước</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hinhanhbunhatmit.jpg"><span data-i18n="gallery4">Bún đóng hộp</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/bothatmit.jpg"><span data-i18n="gallery5">Bột hạt mít</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/bunanlien.jpg"><span data-i18n="gallery6">Bún ăn liền</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hopbunanlien.jpg"><span data-i18n="gallery7">Hộp bún ăn liền</span>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/ảnh trái mít.jpg"><span data-i18n="gallery8">Trái mít được thu mua từ hộ nông và các nhà máy</span>
+            </div>
+
         </div>
     </section>
-
 
     <!-- LIGHTBOX -->
     <div id="lightbox" class="lightbox">
@@ -225,46 +251,66 @@
         </div>
     </div>
 
-
-    <!-- LIÊN HỆ & ĐẶT HÀNG -->
+    <!-- CONTACT -->
     <section id="lien-he">
-        <h2>Thông tin liên hệ &amp; Đặt hàng</h2>
+        <h2 data-i18n="contactTitle">Thông tin liên hệ &amp; Đặt hàng</h2>
 
-        <p><strong>SĐT:</strong> 0376183993</p>
-        <p><strong>Zalo:</strong> Jacknova.vn</p>
-        <p><strong>Email:</strong> Jacknova.vn@gmail.com</p>
+        <p><strong data-i18n="phoneLabel">SĐT:</strong> 0376183993</p>
+        <p><strong data-i18n="zaloLabel">Zalo:</strong> Jacknova.vn</p>
+        <p><strong data-i18n="emailLabel">Email:</strong> Jacknova.vn@gmail.com</p>
+
         <p>
-            <strong>Fanpage:</strong>
+            <strong data-i18n="fanpageLabel">Fanpage:</strong>
             <a href="https://www.facebook.com/profile.php?id=61579310043845" target="_blank">JACKNOVA Official</a>
         </p>
 
         <!-- FORM -->
         <div class="order-box" id="orderForm">
-            <h3>Đặt hàng nhanh JACKNOVA</h3>
+            <h3 data-i18n="orderBoxTitle">Đặt hàng nhanh JACKNOVA</h3>
 
             <form id="quickOrderForm">
 
                 <div class="order-row">
-                    <input type="text" name="fullname" id="fullnameInput" placeholder="Họ và tên" required />
-                    <input type="tel" name="phone" id="phoneInput" placeholder="Số điện thoại" required />
+                    <input type="text" 
+                        name="fullname" 
+                        id="fullnameInput" 
+                        data-i18n-placeholder="placeholderName"
+                        placeholder="Họ và tên" required />
+                    
+                    <input type="tel" 
+                        name="phone" 
+                        id="phoneInput" 
+                        data-i18n-placeholder="placeholderPhone"
+                        placeholder="Số điện thoại" required />
                 </div>
 
                 <div class="order-row">
-                    <input type="number" name="quantity" id="qtyInput" placeholder="Số lượng (VD: 5)" min="1" required />
+                    <input type="number" 
+                        name="quantity" 
+                        id="qtyInput" 
+                        data-i18n-placeholder="placeholderQty"
+                        placeholder="Số lượng (VD: 5)" min="1" required />
                 </div>
 
                 <div class="order-row">
-                    <textarea name="note" id="noteInput" placeholder="Ghi chú (địa chỉ, thời gian liên hệ...)"></textarea>
+                    <textarea 
+                        name="note" 
+                        id="noteInput"
+                        data-i18n-placeholder="placeholderNote"
+                        placeholder="Ghi chú (địa chỉ, thời gian liên hệ...)">
+                    </textarea>
                 </div>
 
-                <button type="submit" class="btn-submit">Gửi yêu cầu đặt hàng</button>
+                <button type="submit" class="btn-submit" data-i18n="submitBtn">Gửi yêu cầu đặt hàng</button>
             </form>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <span>© 2025 JACKNOVA – Bún Hạt Mít. -------- Thịnh Website --------</span>
+        <span data-i18n="footerText">
+            © 2025 JACKNOVA – Bún Hạt Mít. -------- Thịnh Website --------
+        </span>
     </footer>
 
 </div>
@@ -272,7 +318,7 @@
 <!-- Back to top -->
 <button id="backToTop" title="Lên đầu trang">↑</button>
 
-<!-- 🌟 NÚT NỔI LIÊN HỆ -->
+<!-- FLOAT BUTTONS -->
 <div class="floating-buttons">
 
     <a href="https://zalo.me/0376183993" class="float-btn zalo" target="_blank">
