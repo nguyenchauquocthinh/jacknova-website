@@ -61,7 +61,7 @@ const translations = {
         target4: "Những người thích sự mới lạ trong bữa ăn",
 
         galleryTitle: "Hình ảnh sản phẩm",
-        gallery1: "Sản phẩm gian hàng",
+        gallery1: "Gian hàng sản phẩm",
         gallery2: "Bún xào",
         gallery3: "Bún nước",
         gallery4: "Bún hạt mít đóng hộp",
