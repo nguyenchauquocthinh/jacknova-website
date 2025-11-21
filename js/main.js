@@ -26,17 +26,19 @@ const translations = {
         productNameText: "<strong>JACKNOVA – Bún Hạt Mít</strong>",
 
         shortDescTitle: "Mô tả ngắn",
-        shortDescText: "JACKNOVA - Bún Hạt Mít là dòng bún khô tiên phong được chế biến từ <strong>bột hạt mít</strong>. Không Gluten – Không phẩm màu – Không chất bảo quản.",
+        shortDescText:
+            "JACKNOVA - Bún Hạt Mít là dòng bún khô tiên phong được chế biến từ <strong>bột hạt mít</strong>. Không Gluten – Không phẩm màu – Không chất bảo quản.",
 
         detailDescTitle: "Mô tả chi tiết",
-        detailDescText: "JACKNOVA đi đầu xu hướng <strong>Food Upcycling</strong>, tái sinh hạt mít thành thực phẩm xanh. Công nghệ ép đùn &amp; sấy nhiệt giúp bún giữ dinh dưỡng, dai ngon tự nhiên mà không cần Gluten.",
+        detailDescText:
+            "JACKNOVA đi đầu xu hướng <strong>Food Upcycling</strong>, tái sinh hạt mít thành thực phẩm xanh. Công nghệ ép đùn &amp; sấy nhiệt giúp bún giữ dinh dưỡng, dai ngon tự nhiên mà không cần Gluten.",
 
         sectionInfoTitle: "Thành phần – Lợi ích – Hướng dẫn sử dụng",
         ingredientTitle: "Thành phần",
         ingredientText: "• Bột hạt mít nguyên chất.<br>• Nguyên liệu phối trộn chọn lọc.",
 
         healthBenefitsText:
-            "• Không Gluten.<br>• Low GI – phù hợp người tiểu đường.<br>• Giàu chất xơ hòa tan.<br>• Bổ sung protein &amp; khoáng.",
+            "• Không Gluten.<br>• Low GI – phù hợp người tiểu đường.<br>• Giàu chất xơ hòa tan.<br>• Bổ sung protein & khoáng.",
 
         sustainabilityTitle: "Lợi ích bền vững",
         sustainabilityText:
@@ -53,11 +55,10 @@ const translations = {
         priceText: "<strong>30.000 – 35.000đ / gói 200g</strong>",
 
         targetTitle: "Khách hàng mục tiêu",
-        target1: "Người ăn kiêng, giảm cân (Low Carb / Eat Clean / Keto)",
+        target1: "Người ăn kiêng (Low Carb / Eat Clean / Keto)",
         target2: "Người quan tâm đến sức khỏe",
-        target3: "Người tiểu đường &amp; người cao tuổi",
-        target4: "những người thích sự mới lạ trong bữa ăn",
-        
+        target3: "Người tiểu đường & người cao tuổi",
+        target4: "Những người thích sự mới lạ trong bữa ăn",
 
         galleryTitle: "Hình ảnh sản phẩm",
         gallery1: "Sản phẩm gian hàng",
@@ -67,19 +68,17 @@ const translations = {
         gallery5: "Bột hạt mít",
         gallery6: "Bún ăn liền",
         gallery7: "Hộp bún ăn liền",
-        gallery8: "Trái mít được thu mua từ hộ nông và các nhà máy",
+        gallery8: "Trái mít được thu mua từ hộ nông & nhà máy",
 
-        // REVIEW (TIẾNG VIỆT)
         reviewTitle: "Đánh giá khách hàng",
         reviewer1: "Mẹ bỉm",
         reviewer2: "Sinh viên",
-        reviewer3: "Dân Gym",
+        reviewer3: "Dân gym",
         review1: "“Ăn rất ngon, không lo tăng đường. Bún dai tự nhiên, bé cũng thích.”",
         review2: "“Nấu rất nhanh, sạch, tiện — hợp người bận rộn.”",
         review3: "“Low GI chuẩn cho người tập luyện.”",
 
-        // CONTACT
-        contactTitle: "Thông tin liên hệ &amp; Đặt hàng",
+        contactTitle: "Thông tin liên hệ & Đặt hàng",
         phoneLabel: "SĐT:",
         zaloLabel: "Zalo:",
         emailLabel: "Email:",
@@ -89,29 +88,28 @@ const translations = {
         orderBoxTitle: "Đặt hàng nhanh JACKNOVA",
         placeholderName: "Họ và tên của bạn",
         placeholderPhone: "Số điện thoại",
-        placeholderQty: "Số lượng gói (VD: 5)",
+        placeholderQty: "Số lượng (VD: 5 gói)",
         placeholderNote: "Ghi chú thêm (địa chỉ, thời gian liên hệ...)",
+
         submitBtn: "Gửi yêu cầu đặt hàng",
 
         footerText:
             "© 2025 JACKNOVA – Bún Hạt Mít. Tái Sinh Giá Trị – Nâng Tầm Sức Khỏe. -------- Thịnh Website --------",
 
         orderSuccess:
-            "Cảm ơn {name} đã đặt {qty} JACKNOVA!\nChúng tôi sẽ liên hệ xác nhận đơn hàng trong thời gian sớm nhất.",
+            "Cảm ơn {name} đã đặt {qty} JACKNOVA!\nChúng tôi sẽ liên hệ xác nhận trong thời gian sớm nhất.",
         orderProductWord: "sản phẩm",
         orderYouWord: "bạn",
     },
 
-    // =============================================
-    //               ENGLISH VERSION
-    // =============================================
+    // ========================= ENGLISH =========================
     en: {
         pageTitle: "Product Introduction - JACKNOVA Jackfruit Seed Noodles",
 
         headerTitle: "JACKNOVA – Jackfruit Seed Noodles",
         headerSubtitle: "Reviving Value – Elevating Health. Green Food from Agricultural By-Products.",
 
-        heroTitle: "Jackfruit Seed Noodles – Green noodles from Vietnamese farm by-products",
+        heroTitle: "Jackfruit Seed Noodles – Green noodles from Vietnamese by-products",
         heroSubtitle: "Naturally chewy – Gluten-free – No artificial colors – No preservatives.",
 
         navIntro: "About",
@@ -124,7 +122,7 @@ const translations = {
         toggleDark: "Dark mode",
         toggleLight: "Light mode",
 
-        sectionIntroTitle: "Product introduction",
+        sectionIntroTitle: "Product Introduction",
         productNameTitle: "Product name",
         productNameText: "<strong>JACKNOVA – Jackfruit Seed Noodles</strong>",
 
@@ -132,49 +130,47 @@ const translations = {
             "JACKNOVA – Jackfruit Seed Noodles is a pioneering dried noodle made from <strong>jackfruit seed flour</strong>. Gluten-free – No artificial colors – No preservatives.",
 
         detailDescText:
-            "JACKNOVA leads the <strong>Food Upcycling</strong> trend, transforming jackfruit seeds into sustainable food. Advanced extrusion and hot-air drying technology keeps nutrients and creates a naturally chewy texture without Gluten.",
+            "JACKNOVA leads the <strong>Food Upcycling</strong> trend, transforming jackfruit seeds into nutritious, sustainable food.",
 
         sectionInfoTitle: "Ingredients – Benefits – Usage",
-        ingredientText: "• Pure jackfruit seed flour.<br>• Selected blended ingredients.",
+        ingredientText: "• Pure jackfruit seed flour.<br>• Carefully selected blended ingredients.",
 
         healthBenefitsText:
             "• Gluten-free.<br>• Low GI – suitable for diabetics.<br>• Rich in soluble fiber.<br>• Provides protein & minerals.",
 
         sustainabilityText:
-            "• Food Upcycling – reusing agricultural by-products.<br>• Creates additional income for farmers.<br>• Green and safe food.",
+            "• Food Upcycling.<br>• Increases farmer income.<br>• Green & safe food.",
 
         usageText:
-            "<strong>Boil noodles for 5 minutes</strong> → optionally rinse with cold water.<br><br>• Suitable for soup dishes.<br>• Stir-fry or mix with sauce.<br>• Use for hotpot.",
+            "<strong>Boil noodles for 5 minutes</strong> → optionally rinse with cold water.<br><br>• For soup dishes.<br>• Stir-fry.<br>• Hotpot.",
 
-        packingText: "• 200g pack – serves 2–3 people.<br>• Premium PA/PE packaging.",
+        packingText: "• 200g pack — serves 2–3 people.<br>• High-quality PA/PE packaging.",
 
         priceText: "<strong>30,000 – 35,000 VND / 200g pack</strong>",
 
         targetTitle: "Target customers",
-        target1: "People on diet (Low Carb / Eat Clean / Keto)",
-        target2: "health-conscious people",
-        target3: "People with diabetes & the elderly",
-        target4: "people who like novelty in their meals",
-       
+        target1: "Dieters (Low Carb / Eat Clean / Keto)",
+        target2: "Health-conscious people",
+        target3: "People with diabetes & seniors",
+        target4: "People who enjoy novelty in meals",
 
         galleryTitle: "Product gallery",
-        gallery1: "Packaged noodles",
+        gallery1: "Market display",
         gallery2: "Stir-fried noodles",
         gallery3: "Noodle soup",
-        gallery4: "Jackfruit seed noodle box",
+        gallery4: "Packaged noodles",
         gallery5: "Jackfruit seed powder",
         gallery6: "Instant noodles",
         gallery7: "Instant noodle box",
-        gallery8: "Jackfruit collected from farmers & factories",
+        gallery8: "Jackfruits collected from farmers & factories",
 
-        // REVIEW (ENGLISH)
         reviewTitle: "Customer Reviews",
         reviewer1: "Mom with baby",
         reviewer2: "Student",
         reviewer3: "Gym-goer",
-        review1: "“Very delicious and safe for blood sugar. Naturally chewy — even my child loves it.”",
-        review2: "“Super fast to cook, clean, convenient — perfect for busy people.”",
-        review3: "“Low GI — perfect for fitness and muscle control.”",
+        review1: "“Delicious and blood-sugar-friendly. Naturally chewy — kids love it.”",
+        review2: "“Very fast, clean, and convenient — perfect for busy people.”",
+        review3: "“Low GI — perfect for fitness training.”",
 
         contactTitle: "Contact & Order",
         phoneLabel: "Phone:",
@@ -183,11 +179,11 @@ const translations = {
         fanpageLabel: "Fanpage:",
         addressLabel: "Address:",
 
-        orderBoxTitle: "Quick order JACKNOVA",
+        orderBoxTitle: "Quick Order JACKNOVA",
         placeholderName: "Your full name",
         placeholderPhone: "Phone number",
         placeholderQty: "Quantity (e.g. 5 packs)",
-        placeholderNote: "Notes (address, preferred call time, etc.)",
+        placeholderNote: "Notes (address, time to contact…)",
 
         submitBtn: "Send order request",
 
@@ -195,33 +191,39 @@ const translations = {
             "© 2025 JACKNOVA – Jackfruit Seed Noodles. Reviving Value – Elevating Health. -------- Thinh Website --------",
 
         orderSuccess:
-            "Thank you {name} for ordering {qty} JACKNOVA!\nWe will contact you soon to confirm.",
+            "Thank you {name} for ordering {qty} JACKNOVA!\nWe will contact you soon.",
         orderProductWord: "product(s)",
         orderYouWord: "you",
     },
 };
 
 // ========================================================================
-// 🌐 LANGUAGE SYSTEM
+// 🌐 APPLY LANGUAGE
 // ========================================================================
 let currentLang = localStorage.getItem("jacknovaLang") || "vi";
 
 function applyLanguage(lang) {
-    const dict = translations[lang] || translations.vi;
+    const dict = translations[lang];
     document.documentElement.lang = lang;
 
-    // update text nodes
+    // text nodes
     document.querySelectorAll("[data-i18n]").forEach((el) => {
         const key = el.getAttribute("data-i18n");
         if (dict[key]) el.innerHTML = dict[key];
     });
 
-    // update placeholders
+    // placeholders
     document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
         const key = el.getAttribute("data-i18n-placeholder");
         if (dict[key]) el.placeholder = dict[key];
     });
 
+    // update title
+    if (dict.pageTitle) {
+        document.title = dict.pageTitle;
+    }
+
+    // language active button
     document.querySelectorAll(".lang-btn").forEach((btn) => {
         btn.classList.toggle("active", btn.dataset.lang === lang);
     });
@@ -255,7 +257,9 @@ toggleThemeBtn.addEventListener("click", () => {
     updateThemeButtonText();
 });
 
-// language switch
+// ========================================================================
+// 🔄 LANGUAGE SWITCH BUTTON
+// ========================================================================
 document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
         currentLang = btn.dataset.lang;
@@ -287,14 +291,13 @@ const orderForm = document.getElementById("quickOrderForm");
 orderForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const name = this.fullname.value.trim();
-    const qty = this.quantity.value.trim();
     const dict = translations[currentLang];
 
-    const displayName = name || dict.orderYouWord;
+    const name = this.fullname.value.trim() || dict.orderYouWord;
+    const qty = this.quantity.value.trim();
 
     const msg = dict.orderSuccess
-        .replace("{name}", displayName)
+        .replace("{name}", name)
         .replace("{qty}", qty);
 
     alert(msg);
@@ -302,7 +305,7 @@ orderForm.addEventListener("submit", function (e) {
 });
 
 // ========================================================================
-// 🖼 LIGHTBOX GALLERY PRO
+// 🖼 LIGHTBOX GALLERY
 // ========================================================================
 const galleryImages = document.querySelectorAll(".gallery-item img");
 const lightbox = document.getElementById("lightbox");
@@ -329,8 +332,7 @@ function nextImage() {
 }
 
 function prevImage() {
-    currentIndex =
-        (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
     lightboxImg.src = galleryImages[currentIndex].src;
 }
 
@@ -355,7 +357,7 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "ArrowLeft") prevImage();
 });
 
-// SWIPE (Mobile)
+// SWIPE for mobile
 let startX = 0;
 
 lightbox.addEventListener("touchstart", (e) => {
